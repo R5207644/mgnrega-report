@@ -195,14 +195,19 @@
     <div class="mgnrega-report">
 
         <div class="heading">
-            <h3>विधवा Pention</h3>
+            <h3>Pention</h3>
         </div>
 
         <form action="https://sspy-up.gov.in/oap/public/RegistrationFormPrint_New.aspx?">
 
             <input type="text" name="ID" placeholder="Enter Registration No.">
             <input type="text" name="d" value="3149" hidden>
-            <input type="text" name="s" value="WidowPension" hidden>
+            <input name="s" list="Pention" placeholder="Pention Type" type="text">
+            <datalist id="Pention">
+                <option value="OldAgePension">OldAgePension</option>
+                <option value="WidowPension">विधवा </option>
+                <option value="HandicapPension">दिव्यांग</option>
+            </datalist>
             <input type="text" name="tp" value="R" hidden>
             <input type="text" name="regps" placeholder="Confirm Registration No.">
 
